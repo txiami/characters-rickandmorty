@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="box_conteiner">
+
+            <section class="search">
+                <h1>Rick and Morty Search</h1>
+
+                <select id="select_find_caracter">
+                    <option value="">Sobre quem você quer saber?</option>
+                    <option value="rick">Rick</option>
+                    <option value="morty">Morty</option>
+                </select>
+            </section>
+
+            <section class="infos">
+                <div class="img_box">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/328.jpeg" alt="Imagem do Personagem escolhido">
+                </div>
+                <div class="info_box">
+                    <h1>Nome</h1>
+                    <h2>Status</h2>
+
+                    <h3>Last Location</h3>
+                    <p>lastLocation</p>
+
+                    <h3>First In</h3>
+                    <p>firstIn</p>
+                </div>
+            </section>
+
+            <section class="episode">
+                <button>Ver episódios</button>
+                <div class="episodes_list">
+                    <span>12</span>
+                </div>
+            </section>
+
+            <section class="neighbors">
+                <button>Conhecer os visinhos</button>
+                <div class="neighbors_list">
+                    <span>rick</span>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
