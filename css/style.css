@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 50px;
+    gap: 40px;
     max-width: 1200px;
     width: 100%;
 }
@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 select{
     box-sizing: border-box;
@@ -48,6 +49,7 @@ select{
     border-radius: 8px;
     border-width: 3px;
     border-color: #898989;
+    width: 100%;
 }
 
 .search h1{
@@ -94,4 +96,10 @@ select{
     color: rgb(158, 158, 158);
     font-size: 16px;
     font-weight: 500;
+}
+.episode_list, .neighbors_list{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

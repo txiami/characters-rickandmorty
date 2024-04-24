@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/scripts/script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <section class="search">
                 <h1>Rick And Morty Search</h1>
 
-                <select id="characterSelect">
+                <select id="characterSelect"  onchange="findCharacters(event.target.value)">
                     <option value="">Sobre quem você quer saber?</option>
                 </select>
 
@@ -27,11 +28,11 @@
 
             <section class="infos">
                 <div class="img_box">
-                    <img src="https://rickandmortyapi.com/api/character/avatar/189.jpeg" alt="Imagem do Personagem">
+                    <img id="img_do_personagem" src="https://rickandmortyapi.com/api/character/avatar/189.jpeg" alt="Imagem do Personagem">
                 </div>
                 <div class="info_box">
-                    <h1>Nome</h1>
-                    <h2>Status</h2>
+                    <h1 id="nome_do_personagem">Nome</h1>
+                    <h2 id="status_do_personagem">Status</h2>
 
                     <h3>Last known location:</h3>
                     <p class="lastLocation"></p>
