@@ -79,6 +79,7 @@ select{
     height: 100%;
     padding: 0.75rem;
     border-radius: 0 8px 8px 0;
+
 }
 
 .info_box h1 {
@@ -96,6 +97,11 @@ select{
     color: rgb(158, 158, 158);
     font-size: 16px;
     font-weight: 500;
+}
+
+#lastLocation, #firstIn {
+    color: rgb(245, 245, 245);
+    font-size: 18px ;
 }
 .episode_list, .neighbors_list{
     max-width: 1200px;

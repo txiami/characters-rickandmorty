@@ -62,7 +62,11 @@ function showEpisodes(data) {
         option.textContent = episode.slice(40);
         episodeSelect.appendChild(option);
     });
+
 }
+
+
+
 
 
 async function showNeighbors(data) {
@@ -120,9 +124,13 @@ function showCharacter(data){
     const name = document.getElementById("name_caracter")
     const status = document.getElementById("status_caracter")
     const species = document.getElementById("species_caracter")
+    const location = document.getElementById("lastLocation")
+
+
     img.src = data.image
     name.innerText = data.name   
     status.innerText = data.status
     species.innerText = data.species
+    location.innerText = data.location.name
 }
 
