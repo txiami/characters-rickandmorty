@@ -116,11 +116,13 @@ async function findResidentsNames(urls) {
 }
 
 function showCharacter(data){
-    const img = document.getElementById("img_do_personagem")
-    const name = document.getElementById("nome_do_personagem")
-    const status = document.getElementById("status_do_personagem")
+    const img = document.getElementById("img_caracter")
+    const name = document.getElementById("name_caracter")
+    const status = document.getElementById("status_caracter")
+    const species = document.getElementById("species_caracter")
+    img.src = data.image
     name.innerText = data.name   
     status.innerText = data.status
-    img.src = data.image
+    species.innerText = data.species
 }
 

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/scripts/script.js"></script>
 </head>
@@ -20,7 +22,7 @@
             <section class="search">
                 <h1>Rick And Morty Search</h1>
 
-                <select id="characterSelect"  onchange="findCharacters(event.target.value)">
+                <select id="characterSelect" onchange="findCharacters(event.target.value)">
                     <option value="">Sobre quem você quer saber?</option>
                 </select>
 
@@ -28,12 +30,14 @@
 
             <section class="infos">
                 <div class="img_box">
-                    <img id="img_do_personagem" src="https://rickandmortyapi.com/api/character/avatar/189.jpeg" alt="Imagem do Personagem">
+                    <img id="img_caracter" src="https://rickandmortyapi.com/api/character/avatar/189.jpeg"
+                        alt="Imagem do Personagem">
                 </div>
                 <div class="info_box">
-                    <h1 id="nome_do_personagem">Nome</h1>
-                    <h2 id="status_do_personagem">Status</h2>
-
+                    <h1 id="name_caracter">Nome</h1>
+                    <div class="status_specie"><span id="status_caracter"> Status </span>
+                        <span id="species_caracter"> Specie </span>
+                    </div>
                     <h3>Last known location:</h3>
                     <p class="lastLocation"></p>
 
