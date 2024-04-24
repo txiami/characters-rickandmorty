@@ -33,10 +33,21 @@
 }
 select{
     box-sizing: border-box;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: #898989;
     max-width: 750px;
     width: 100%;
     font-size: 28px;
     padding: 21px 20px 21px 20px;
+}
+
+#neighborSelect, #episodeSelect {
+    background-color: #3B3E44;
+    color: white;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: #898989;
 }
 
 .search h1{
@@ -49,6 +60,7 @@ select{
     justify-content: center;
     height: 220px;
     width: 600px;
+    
 }
 .infos .img_box{
     width: 40%;
@@ -60,9 +72,26 @@ select{
     border-radius: 8px 0 0 8px ;
 }
 .infos .info_box{
-    background-color: #898989;
+    background-color: rgb(32, 35, 41);
     width: 66%;
     height: 100%;
     padding: 0.75rem;
     border-radius: 0 8px 8px 0;
+}
+
+.info_box h1 {
+    color: #f5f5f5;
+    font-size: 1.5rem;
+}
+
+.info_box h2 {
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info_box h3 {
+    color: rgb(158, 158, 158);
+    font-size: 16px;
+    font-weight: 500;
 }
